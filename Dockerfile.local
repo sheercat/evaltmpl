@@ -1,0 +1,5 @@
+# FROM golang:1.5.3-onbuild
+
+FROM busybox
+COPY ./evaltmpl /evaltmpl
+CMD ["/evaltmpl"]
